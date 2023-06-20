@@ -1,0 +1,10 @@
+{
+  "autorun": true,
+  "terminals": [
+    {
+      "name": "ror_api",
+      "execute": false,
+      "command": "rails s -p3001"
+    }
+  ]
+}

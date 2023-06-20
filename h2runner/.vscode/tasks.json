@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "gradle",
+      "id": "c:\\attendance\\h2runnerbuildh2runner",
+      "script": "build",
+      "description": "Assembles and tests this project.",
+      "group": "build",
+      "project": "h2runner",
+      "buildFile": "C:\\attendance\\h2runner\\build.gradle",
+      "rootProject": "h2runner",
+      "projectFolder": "c:\\attendance\\h2runner",
+      "workspaceFolder": "c:\\attendance\\h2runner",
+      "args": "",
+      "javaDebug": false,
+      "problemMatcher": ["$gradle"],
+      "label": "gradle: build"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+# 代理申請 当月
+- id: null
+  attendance_kind_id: 5
+  status: "2"
+  subfamily: "2"
+  execution: "0"
+  begin_date: "P6"
+  begin_time: "18:00"
+  end_date: null
+  end_time: "20:00"
+  shift: "1"
+  reason: "生産遅れ"
+  application_date: "T"
+  approval_date: null
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: 3
+  approver_id: 2
+  attendance_members_attributes:
+    - employee_id: 6
+    - employee_id: 7
+    - employee_id: 9
+- id: null
+  attendance_kind_id: 6
+  status: "2"
+  subfamily: "2"
+  execution: "0"
+  begin_date: "PNS"
+  begin_time: "08:00"
+  end_date: null
+  end_time: "17:00"
+  shift: "1"
+  reason: "増産対応"
+  application_date: "T"
+  approval_date: null
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: 3
+  approver_id: 2
+  attendance_members_attributes:
+    - employee_id: 6
+    - employee_id: 7
+    - employee_id: 9
+# 代理申請 前月 計画
+- id: null
+  attendance_kind_id: 5
+  status: "3"
+  subfamily: "2"
+  execution: "0"
+  begin_date: "BT"
+  begin_time: "18:00"
+  end_date: null
+  end_time: "20:00"
+  shift: "1"
+  reason: "生産遅れ"
+  application_date: "BN3"
+  approval_date: "BN2"
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: 3
+  approver_id: 2
+  attendance_members_attributes:
+    - employee_id: 6
+    - employee_id: 7
+    - employee_id: 9
+- id: null
+  attendance_kind_id: 6
+  status: "3"
+  subfamily: "2"
+  execution: "0"
+  begin_date: "BPNS"
+  begin_time: "08:00"
+  end_date: null
+  end_time: "17:00"
+  shift: "1"
+  reason: "増産対応"
+  application_date: "BT"
+  approval_date: "BP1"
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: 3
+  approver_id: 2
+  attendance_members_attributes:
+    - employee_id: 6
+    - employee_id: 7
+    - employee_id: 9
+# 代理申請 前月 実績
+- id: null
+  attendance_kind_id: 5
+  status: "3"
+  subfamily: "3"
+  execution: "1"
+  begin_date: "BT"
+  begin_time: "18:00"
+  end_date: null
+  end_time: "20:00"
+  shift: "1"
+  reason: "生産遅れ"
+  application_date: "BP1"
+  approval_date: "BP2"
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: 3
+  approver_id: 2
+  attendance_members_attributes:
+    - employee_id: 6
+    - employee_id: 7
+    - employee_id: 9
+- id: null
+  attendance_kind_id: 6
+  status: "3"
+  subfamily: "3"
+  execution: "1"
+  begin_date: "BPNS"
+  begin_time: "08:00"
+  end_date: null
+  end_time: "17:00"
+  shift: "1"
+  reason: "増産対応"
+  application_date: "BPNS1"
+  approval_date: "BPNS2"
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: 3
+  approver_id: 2
+  attendance_members_attributes:
+    - employee_id: 6
+    - employee_id: 7
+    - employee_id: 9

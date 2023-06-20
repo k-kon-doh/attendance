@@ -1,0 +1,113 @@
+###
+http://localhost:3000/api/v1/session
+
+###
+POST http://localhost:3001/api/v1/session
+content-type: application/json
+Accept-Language: ja
+
+{
+    "login_id": "u1111a",
+    "password": "u1111a"
+}
+
+###
+DELETE http://localhost:3001/api/v1/session
+X-CSRF-Token: hu3X8GeCtKZLHhYXkAuBiU6txdnQDoNhTka5E59yfiDVlaKgbDuy5PpZwWEFNzA1JhdrskyU8GAzZY1iG-GmRg
+
+###
+PUT http://localhost:3000/users/1 HTTP/1.1
+content-type: application/json
+X-CSRF-Token: hStZJKHw7dSeLV9onZb5de1s5WU74uqeu0kXpWbW-nCCvKzQ79lJWlF2IZfx3sUhteuc2oawbi8WK2Fhp-DcEg
+
+{
+    "user_id": "hoge3",
+    "password": "hogepwd1"
+}
+
+###
+PATCH http://localhost:3000/users/1 HTTP/1.1
+content-type: application/json
+
+{
+    "user_id": "hoge1",
+    "password": "hogepwd1"
+}
+
+###--------------------------------------------
+GET http://localhost:3001/api/v1/categories
+content-type: application/json
+Accept-Language: en
+
+
+###
+GET http://localhost:3001/api/v1/attendance_kinds
+content-type: application/json
+Accept-Language: jp
+
+###--------------------------------------------
+POST http://localhost:3001/api/v1/session
+content-type: application/json
+Accept-Language: ja
+
+{
+    "login_id": "u1110a",
+    "password": "u1110a"
+}
+
+###
+GET http://localhost:3001/api/v1/attendances/self/1
+content-type: application/json
+Accept-Language: jp
+
+###
+GET http://localhost:3001/api/v1/attendances/representative/6
+content-type: application/json
+Accept-Language: jp
+
+###
+GET http://localhost:3001/api/v1/attendances/approval/1/edit
+content-type: application/json
+Accept-Language: jp
+
+###
+POST http://localhost:3001/api/v1/attendances/representative/search
+content-type: application/json
+Accept-Language: jp
+X-CSRF-Token: xTVUZNQMtFeVqDnGiN4uGFkfceew61g77bHdfk42oHf8GovRJXdNXOaE49__zxhky3rmbbVTkXqb1bOVDEAsvg
+
+{
+    "criteria": {
+        "status": "",
+        "kind": "",
+        "date": "",
+        "applicationDate": ""
+    }
+}
+
+###
+GET http://localhost:3001/api/v1/approvers
+content-type: application/json
+Accept-Language: jp
+
+
+#----------------------------------------------------
+###
+POST http://localhost:3001/api/v1/session
+content-type: application/json
+Accept-Language: ja
+
+{
+    "login_id": "u1122c",
+    "password": "u1122c"
+}
+
+###
+GET http://localhost:3001/api/v1/approvers
+content-type: application/json
+Accept-Language: jp
+
+###
+GET http://localhost:3001/api/v1/candidates
+content-type: application/json
+Accept-Language: jp

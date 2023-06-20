@@ -1,0 +1,360 @@
+# 自己申請 当月
+- id: null
+  attendance_kind_id: 2
+  status: "2"
+  subfamily: "1"
+  execution: "1"
+  begin_date: "N1"
+  begin_time: "15:00"
+  end_date: null
+  end_time: ""
+  shift: "1"
+  reason: "体調不良"
+  application_date: "T"
+  approval_date: null
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 3
+  status: "2"
+  subfamily: "1"
+  execution: "1"
+  begin_date: "N2"
+  begin_time: "13:00"
+  end_date: null
+  end_time: "14:00"
+  shift: "1"
+  reason: "授業参観"
+  application_date: "N1"
+  approval_date: null
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 11
+  status: "2"
+  subfamily: "1"
+  execution: "1"
+  begin_date: "N3"
+  begin_time: ""
+  end_date: null
+  end_time: ""
+  shift: "1"
+  reason: "体調不良"
+  application_date: "N2"
+  approval_date: null
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 1
+  status: "1"
+  subfamily: "1"
+  execution: "1"
+  begin_date: "T"
+  begin_time: "9:00"
+  end_date: null
+  end_time: ""
+  shift: "1"
+  reason: "体調不良"
+  application_date: null
+  approval_date: null
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: null
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 5
+  status: "1"
+  subfamily: "2"
+  execution: "0"
+  begin_date: "P3"
+  begin_time: "18:00"
+  end_date: null
+  end_time: "20:00"
+  shift: "1"
+  reason: "生産遅れ"
+  application_date: null
+  approval_date: null
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: null
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 6
+  status: "1"
+  subfamily: "2"
+  execution: "0"
+  begin_date: "PS"
+  begin_time: "08:00"
+  end_date: null
+  end_time: "17:00"
+  shift: "1"
+  reason: "増産対応"
+  application_date: null
+  approval_date: null
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: null
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 8
+  status: "1"
+  subfamily: "2"
+  execution: "0"
+  begin_date: "P7"
+  begin_time: ""
+  end_date: null
+  end_time: ""
+  shift: "1"
+  reason: ""
+  application_date: null
+  approval_date: null
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+# 自己申請 前月
+- id: null
+  attendance_kind_id: 2
+  status: "3"
+  subfamily: "1"
+  execution: "1"
+  begin_date: "BN1"
+  begin_time: "15:00"
+  end_date: null
+  end_time: ""
+  shift: "1"
+  reason: "体調不良"
+  application_date: "BT"
+  approval_date: "BP1"
+  approval_comment: "お大事に"
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 3
+  status: "3"
+  subfamily: "1"
+  execution: "1"
+  begin_date: "BN2"
+  begin_time: "13:00"
+  end_date: null
+  end_time: "14:00"
+  shift: "1"
+  reason: "授業参観"
+  application_date: "BN1"
+  approval_date: BN1
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 11
+  status: "3"
+  subfamily: "1"
+  execution: "1"
+  begin_date: "BN3"
+  begin_time: ""
+  end_date: null
+  end_time: ""
+  shift: "1"
+  reason: "体調不良"
+  application_date: "BN2"
+  approval_date: "BN1"
+  approval_comment: "事前連絡するように"
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 1
+  status: "3"
+  subfamily: "1"
+  execution: "1"
+  begin_date: "BT"
+  begin_time: "9:00"
+  end_date: null
+  end_time: ""
+  shift: "1"
+  reason: "体調不良"
+  application_date: "BP1"
+  approval_date: "BP2"
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 5
+  status: "3"
+  subfamily: "2"
+  execution: "0"
+  begin_date: "BP3"
+  begin_time: "18:00"
+  end_date: null
+  end_time: "20:00"
+  shift: "1"
+  reason: "生産遅れ"
+  application_date: "BT"
+  approval_date: "BP1"
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 6
+  status: "3"
+  subfamily: "2"
+  execution: "0"
+  begin_date: "BPS"
+  begin_time: "08:00"
+  end_date: null
+  end_time: "17:00"
+  shift: "1"
+  reason: "増産対応"
+  application_date: "BT"
+  approval_date: "BT"
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 8
+  status: "3"
+  subfamily: "2"
+  execution: "0"
+  begin_date: "BP7"
+  begin_time: ""
+  end_date: null
+  end_time: ""
+  shift: "1"
+  reason: ""
+  application_date: "BT"
+  approval_date: "BP3"
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+# 自己申請 前月 実績
+- id: null
+  attendance_kind_id: 5
+  status: "3"
+  subfamily: "3"
+  execution: "1"
+  begin_date: "BP3"
+  begin_time: "18:00"
+  end_date: null
+  end_time: "20:00"
+  shift: "1"
+  reason: "生産遅れ"
+  application_date: "BP4"
+  approval_date: "BP5"
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 6
+  status: "3"
+  subfamily: "3"
+  execution: "1"
+  begin_date: "BPS"
+  begin_time: "08:00"
+  end_date: null
+  end_time: "17:00"
+  shift: "1"
+  reason: "増産対応"
+  application_date: "BPS1"
+  approval_date: "BPS2"
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6
+- id: null
+  attendance_kind_id: 8
+  status: "3"
+  subfamily: "3"
+  execution: "1"
+  begin_date: "BP7"
+  begin_time: ""
+  end_date: null
+  end_time: ""
+  shift: "1"
+  reason: ""
+  application_date: "BP8"
+  approval_date: "BP9"
+  approval_comment: ""
+  related_id: null
+  validity: "1"
+  lock_version: 0
+  agent_id: null
+  approver_id: 3
+  attendance_members_attributes:
+    - employee_id: 6

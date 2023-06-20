@@ -1,0 +1,4 @@
+'ID'	'NAME'	'SHOW_ORDER'
+'1'	'{"ja":"作業者", "en":"worker"}'	'1'
+'2'	'{"ja":"リーダー", "en":"leader"}'	'2'
+'3'	'{"ja":"管理者", "en":"manager"}'	'3'

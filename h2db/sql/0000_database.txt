@@ -1,0 +1,38 @@
+
+H2 Databaseに新しいデータベースを作成する
+
+====【タスクトレー H2 Database Engine】=====================
+「H2 Console」を起動（org.h2.tools.Console）
+右クリック→「Create a new database ...」をクリック→Createボタン
+--------------------------------------------
+Database path: C:/[path]/[DBName]
+Username: ****
+Password: ****
+Password confirmation: ****
+
+====【Webコンソール】=======================================
+データベースがない状態で「Generic H2(Server)」を
+選択してもエラーになる
+一度「Generic H2(Embedded) 」を選択して接続すると
+自動的にデータベースが作成される
+
+※ 起動時に「-baseDir」を指定している場合、「C:/[path]/」は不要
+
+--------------------------------------------
+「H2 Console」を起動（org.h2.tools.Console）
+
+保存済設定： Generic H2(Embedded)
+設定名： Generic H2(Embedded)
+ドライバクラス： org.h2.Driver
+JDBC URL： jdbc:h2:C:/[path]/[DBName];MODE=PostgreSQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE
+ユーザー名： ****
+パスワード： ****
+--------------------------------------------
+「H2 Console」を起動（org.h2.tools.Server）
+
+保存済設定： Generic H2(Server)
+設定名： Generic H2(Server)
+ドライバクラス： org.h2.Driver
+JDBC URL： jdbc:h2:tcp:C:/[path]/[DBName];MODE=PostgreSQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE
+ユーザー名： ****
+パスワード： ****

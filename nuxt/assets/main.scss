@@ -1,0 +1,11 @@
+@use "vuetify/styles";
+
+@use "vuetify/lib/components/VCounter/variables" as vc;
+// v-text-field：カウンター表示により高さが変化する(+2px)ことへの対策
+.v-counter {
+  line-height: vc.$counter-line-height;
+}
+// v-text-field：ラベルが右上に移動したとき他要素と重なることへの対策
+.v-field {
+  margin-top: calc(vc.$counter-font-size / 2);
+}

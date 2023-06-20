@@ -1,0 +1,11 @@
+{
+  "autorun": true,
+  "terminals": [
+    {
+      "name": "nuxt",
+      "focus": true,
+      "execute": false,
+      "command": "npm run dev"
+    }
+  ]
+}

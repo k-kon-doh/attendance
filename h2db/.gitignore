@@ -1,0 +1,6 @@
+/bin/*.jar
+/db/*
+!/db/.keep
+/csv/*
+!/csv/.keep
+

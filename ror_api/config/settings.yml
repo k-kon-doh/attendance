@@ -1,0 +1,95 @@
+shared:
+  default_language: "ja"
+  max_reason_length: 100
+  max_comment_length: 100
+  max_time:
+    hour: "47"
+    minute: "59"
+  required:
+    optional: "0"
+    required: "1"
+  necessary:
+    notNeeded: "0"
+    required: "1"
+    optional": "2"
+  status:
+    making: "1"
+    applying: "2"
+    accepted: "3"
+    rejected: "4"
+  family:
+    solo: "1"
+    planAndResult: "2"
+  subfamily:
+    solo: "1"
+    plan: "2"
+    result: "3"
+  execution:
+    notYet: "0"
+    done: "1"
+  kind:
+    late: "1"
+    early: "2"
+    out: "3"
+    overtime_early: "4"
+    overtime: "5"
+    work_on_a_day_off: "6"
+    substitute_work: "7"
+    paid_holiday: "8"
+    compensatory_day_off: "9"
+    day_off_in_lieu: "10"
+    absence: "11"
+    special_day_off: "12"
+  feature:
+    code:
+      selfApply: "1"
+      representativeApply: "2"
+      approve: "3"
+      masterMaint: "4"
+    attendance:
+      - "self"
+      - "representative"
+      - "approval"
+    apply:
+      - "self"
+      - "representative"
+    approve:
+      - "approval"
+  criteria:
+    attendance:
+      - "status"
+      - "kind"
+      - "date"
+      - "applicationDate"
+  attendance:
+    key:
+      - "id"
+      - "attendanceKindId"
+      - "status"
+      - "subfamily"
+      - "execution"
+      - "beginDate"
+      - "beginTime"
+      - "endDate"
+      - "endTime"
+      - "shift"
+      - "reason"
+      - "applicationDate"
+      - "agent"
+      - "approver"
+      - "approvalDate"
+      - "approvalComment"
+      - "relatedId"
+      - "validity"
+      - "lockVersion"
+      - "employees"
+      - "applicants"
+    employee:
+      - "choiceId"
+      - "name"
+    applicant:
+      - "hierarchy"
+      - "organization"
+      - "choiceId"
+      - "name"
+      - "choice"

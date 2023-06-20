@@ -1,0 +1,4 @@
+'KEYWORD'	'SETTING_VALUE'	'NOTE'
+'max_of_login_failes'	'5'	'ログイン失敗最大回数'
+'default_language'	'ja'	'既定言語'
+'available_languages'	'["ja", "en"]'	'サポート言語'
