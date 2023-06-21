@@ -4,25 +4,24 @@ module DbInitializer
     def init
       # DBテーブルをクリア
       pattern = Regexp.compile('\d{14}_create_(\w+)[.]rb$', Regexp::IGNORECASE)
-      tables = Rails.root.glob('db/migrate/*.rb').filter_map do |file_name|
-        pattern.match(file_name.to_s)&.to_a&.at(1)
+      tables = Rails.root.glob('db/migrate/*.rb', File::FNM_CASEFOLD).filter_map do |file_name|
+        pattern.match(file_name.to_s)&.to_a&.at(1)&.downcase
       end.uniq
       SqliteSequence.where(name: tables).delete_all
-      tables.each { |it| it.downcase.singularize.classify.constantize.delete_all }
+      tables.each { |it| it.singularize.classify.constantize.delete_all }
 
       # 勤怠と勤怠メンバーテーブルは、データをロードしない
       load_tables = tables.filter_map do |table_name|
-        table_name unless %w[attendances attendance_members].include? table_name.downcase
+        table_name unless %w[attendances attendance_members].include? table_name
       end
 
       # DBテーブルに初期データをロード
-      pathnames = load_tables.map do |table|
-        Rails.root.join('db', 'csv', "#{table}.csv")
+      csv_files = []
+      Rails.root.glob('db/csv/*.csv', File::FNM_CASEFOLD).each do |file_name|
+        index = load_tables.index(file_name.basename('.*').to_s.downcase)
+        csv_files[index] = file_name unless index.nil?
       end
-      csv_files = pathnames.filter_map do |pathname|
-        pathname.exist? ? pathname : nil
-      end
-      csv_files.each do |csv_file|
+      csv_files.compact.each do |csv_file|
         table = File.basename(csv_file, '.csv').downcase.singularize.classify.constantize
         CSV.open(csv_file, headers: :first_row, return_headers: false, col_sep: "\t", quote_char: "'") do |csv|
           csv.header_convert do |field|
