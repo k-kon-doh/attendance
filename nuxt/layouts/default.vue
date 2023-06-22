@@ -41,7 +41,7 @@ afterEach(() => (transition.value = false));
 
     <v-footer app class="footer flex-row-reverse bg-primary" style="width: 100%;">k-kon-doh</v-footer>
 
-    <v-navigation-drawer app class="pa-2" v-model="showDrawer">
+    <v-navigation-drawer app class="pa-2" temporary v-model="showDrawer">
       <v-switch false-value="light" label="Theme" true-value="dark" v-model="theme.global.name" />
       <p>※ 以下割愛</p>
     </v-navigation-drawer>
