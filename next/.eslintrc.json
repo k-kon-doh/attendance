@@ -1,0 +1,56 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2022": true
+  },
+  "extends": ["next", "next/core-web-vitals", "eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "settings": {
+    "import/external-module-folders": ["node_modules"]
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "react", "import", "unused-imports"],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
+    "import/order": [
+      "error",
+      {
+        // 記述した順番で並び替えられる
+        "groups": [
+          "builtin", // node "builtin" module
+          "external", // "external" module
+          "internal", // "internal" module
+          ["parent", "sibling", "index"], // 左から「親ディレクトリ」、「兄弟ディレクトリ」、「カレントディレクトリ」
+          "object", // "object"-imports
+          "type" // "type" imports
+        ],
+        // パスでグループ化する
+        "pathGroups": [
+          {
+            "pattern": "@/**",
+            "group": "parent",
+            "position": "before" // groupに対しての相対的な位置
+          }
+        ],
+        // pathGroupsによって処理されないインポートタイプを指定
+        "pathGroupsExcludedImportTypes": [
+          "builtin",
+          "external",
+          "object",
+          "type" // "type" importは"@/**"に該当しても最後に配置される
+        ],
+        // 各グループ内の順序をアルファベット順で並べ替える
+        "alphabetize": {
+          "order": "asc", // 昇順
+          "caseInsensitive": true // 大文字、小文字を区別しない
+        },
+        "newlines-between": "always" // グループごとに空行を挿入するか
+      }
+    ]
+  }
+}
