@@ -1,0 +1,14 @@
+AllCops:
+  TargetRubyVersion: 3.2
+
+Layout/EndOfLine:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 50
+
+Metrics/MethodLength:
+  Max: 50
